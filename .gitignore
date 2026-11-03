@@ -1,0 +1,37 @@
+# Dependencies (root, backend and frontend)
+node_modules/
+.pnp
+.pnp.js
+
+# Builds and test output
+build/
+dist/
+coverage/
+.nyc_output/
+
+# Environment files (keep the .env.example template)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# AI assistant / tooling folders
+.claude/
+.omc/
+CLAUDE.local.md
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
