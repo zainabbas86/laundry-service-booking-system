@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="hML59QmA3W2TUSzERTqv">
+    <mxGraphModel dx="1471" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-1" parent="1" style="html=1;shape=mxgraph.sysml.package;html=1;overflow=fill;whiteSpace=wrap;labelX=239.57;" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:10px;text-align:left;&quot;&gt;&lt;b&gt;req [Package] LSBS requirements&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="690" width="720" x="70" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-2" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="187" width="200" x="90" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-3" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-4" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Book a pickup" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-5" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-6" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The customer shall book a pickup, by choosing a store, a service, a 30 min slot and address.&quot;" vertex="1">
+          <mxGeometry height="111" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-7" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R009&quot;" vertex="1">
+          <mxGeometry height="16" width="200" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-8" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="18" width="200" y="169" as="geometry" />
+        </mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-12" edge="1" parent="_qxp7GEGSiDKVrqC5Cvn-2" source="_qxp7GEGSiDKVrqC5Cvn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;" target="_qxp7GEGSiDKVrqC5Cvn-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
