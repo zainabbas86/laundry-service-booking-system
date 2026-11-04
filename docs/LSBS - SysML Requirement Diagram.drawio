@@ -25,11 +25,116 @@
         <mxCell id="_qxp7GEGSiDKVrqC5Cvn-7" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R009&quot;" vertex="1">
           <mxGeometry height="16" width="200" y="153" as="geometry" />
         </mxCell>
-        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-8" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;" value="" vertex="1">
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-8" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
           <mxGeometry height="18" width="200" y="169" as="geometry" />
         </mxCell>
         <mxCell id="_qxp7GEGSiDKVrqC5Cvn-12" edge="1" parent="_qxp7GEGSiDKVrqC5Cvn-2" source="_qxp7GEGSiDKVrqC5Cvn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;" target="_qxp7GEGSiDKVrqC5Cvn-8">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R001-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="187" width="200" x="90" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="R001-1" parent="R001-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R001-2" parent="R001-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Register and log in" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="R001-3" parent="R001-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R001-4" parent="R001-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;A customer shall be able to register, and all users shall be able to log in.&quot;" vertex="1">
+          <mxGeometry height="111" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R001-5" parent="R001-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R001&quot;" vertex="1">
+          <mxGeometry height="16" width="200" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="R001-6" parent="R001-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
+          <mxGeometry height="18" width="200" y="169" as="geometry" />
+        </mxCell>
+        <mxCell id="R002-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="187" width="200" x="310" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="R002-1" parent="R002-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R002-2" parent="R002-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Role-based access" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="R002-3" parent="R002-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R002-4" parent="R002-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The system shall support four roles (System Admin, Manager, Driver, Customer) and limit each function to the right roles.&quot;" vertex="1">
+          <mxGeometry height="111" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R002-5" parent="R002-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R002&quot;" vertex="1">
+          <mxGeometry height="16" width="200" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="R002-6" parent="R002-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
+          <mxGeometry height="18" width="200" y="169" as="geometry" />
+        </mxCell>
+        <mxCell id="R003-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="187" width="200" x="530" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="R003-1" parent="R003-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R003-2" parent="R003-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Promote users" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="R003-3" parent="R003-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R003-4" parent="R003-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The System Admin shall be able to make any user a Manager or an Admin.&quot;" vertex="1">
+          <mxGeometry height="111" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R003-5" parent="R003-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R003&quot;" vertex="1">
+          <mxGeometry height="16" width="200" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="R003-6" parent="R003-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
+          <mxGeometry height="18" width="200" y="169" as="geometry" />
+        </mxCell>
+        <mxCell id="R004-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="187" width="200" x="90" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="R004-1" parent="R004-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R004-2" parent="R004-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Admin protection" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="R004-3" parent="R004-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R004-4" parent="R004-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;An admin shall not demote another admin but may demote themselves; the last admin shall not be demoted or deleted.&quot;" vertex="1">
+          <mxGeometry height="111" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R004-5" parent="R004-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R004&quot;" vertex="1">
+          <mxGeometry height="16" width="200" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="R004-6" parent="R004-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
+          <mxGeometry height="18" width="200" y="169" as="geometry" />
+        </mxCell>
+        <mxCell id="R005-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="187" width="200" x="310" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="R005-1" parent="R005-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R005-2" parent="R005-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Create accounts" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="R005-3" parent="R005-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R005-4" parent="R005-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;Managers and admins shall be able to create customer and driver accounts.&quot;" vertex="1">
+          <mxGeometry height="111" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R005-5" parent="R005-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R005&quot;" vertex="1">
+          <mxGeometry height="16" width="200" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="R005-6" parent="R005-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
+          <mxGeometry height="18" width="200" y="169" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
