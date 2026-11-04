@@ -1,141 +1,77 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="Page-1" id="hML59QmA3W2TUSzERTqv">
-    <mxGraphModel dx="1471" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram name="Requirements" id="hML59QmA3W2TUSzERTqv">
+    <mxGraphModel dx="1471" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-1" parent="1" style="html=1;shape=mxgraph.sysml.package;html=1;overflow=fill;whiteSpace=wrap;labelX=239.57;" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:10px;text-align:left;&quot;&gt;&lt;b&gt;req [Package] LSBS requirements&lt;/b&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="690" width="720" x="70" y="70" as="geometry" />
-        </mxCell>
-        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-2" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
-          <mxGeometry height="187" width="200" x="90" y="110" as="geometry" />
-        </mxCell>
-        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-3" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
-          <mxGeometry height="16" width="200" as="geometry" />
-        </mxCell>
-        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-4" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Book a pickup" vertex="1">
-          <mxGeometry height="18" width="200" y="16" as="geometry" />
-        </mxCell>
-        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-5" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="200" y="34" as="geometry" />
-        </mxCell>
-        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-6" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The customer shall book a pickup, by choosing a store, a service, a 30 min slot and address.&quot;" vertex="1">
-          <mxGeometry height="111" width="200" y="42" as="geometry" />
-        </mxCell>
-        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-7" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R009&quot;" vertex="1">
-          <mxGeometry height="16" width="200" y="153" as="geometry" />
-        </mxCell>
-        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-8" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
-          <mxGeometry height="18" width="200" y="169" as="geometry" />
-        </mxCell>
-        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-12" edge="1" parent="_qxp7GEGSiDKVrqC5Cvn-2" source="_qxp7GEGSiDKVrqC5Cvn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;" target="_qxp7GEGSiDKVrqC5Cvn-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="R001-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
-          <mxGeometry height="187" width="200" x="90" y="330" as="geometry" />
-        </mxCell>
-        <mxCell id="R001-1" parent="R001-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
-          <mxGeometry height="16" width="200" as="geometry" />
-        </mxCell>
-        <mxCell id="R001-2" parent="R001-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Register and log in" vertex="1">
-          <mxGeometry height="18" width="200" y="16" as="geometry" />
-        </mxCell>
-        <mxCell id="R001-3" parent="R001-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="200" y="34" as="geometry" />
-        </mxCell>
-        <mxCell id="R001-4" parent="R001-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;A customer shall be able to register, and all users shall be able to log in.&quot;" vertex="1">
-          <mxGeometry height="111" width="200" y="42" as="geometry" />
-        </mxCell>
-        <mxCell id="R001-5" parent="R001-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R001&quot;" vertex="1">
-          <mxGeometry height="16" width="200" y="153" as="geometry" />
-        </mxCell>
-        <mxCell id="R001-6" parent="R001-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
-          <mxGeometry height="18" width="200" y="169" as="geometry" />
-        </mxCell>
-        <mxCell id="R002-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
-          <mxGeometry height="187" width="200" x="310" y="330" as="geometry" />
-        </mxCell>
-        <mxCell id="R002-1" parent="R002-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
-          <mxGeometry height="16" width="200" as="geometry" />
-        </mxCell>
-        <mxCell id="R002-2" parent="R002-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Role-based access" vertex="1">
-          <mxGeometry height="18" width="200" y="16" as="geometry" />
-        </mxCell>
-        <mxCell id="R002-3" parent="R002-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="200" y="34" as="geometry" />
-        </mxCell>
-        <mxCell id="R002-4" parent="R002-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The system shall support four roles (System Admin, Manager, Driver, Customer) and limit each function to the right roles.&quot;" vertex="1">
-          <mxGeometry height="111" width="200" y="42" as="geometry" />
-        </mxCell>
-        <mxCell id="R002-5" parent="R002-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R002&quot;" vertex="1">
-          <mxGeometry height="16" width="200" y="153" as="geometry" />
-        </mxCell>
-        <mxCell id="R002-6" parent="R002-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
-          <mxGeometry height="18" width="200" y="169" as="geometry" />
-        </mxCell>
-        <mxCell id="R003-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
-          <mxGeometry height="187" width="200" x="530" y="330" as="geometry" />
-        </mxCell>
-        <mxCell id="R003-1" parent="R003-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
-          <mxGeometry height="16" width="200" as="geometry" />
-        </mxCell>
-        <mxCell id="R003-2" parent="R003-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Promote users" vertex="1">
-          <mxGeometry height="18" width="200" y="16" as="geometry" />
-        </mxCell>
-        <mxCell id="R003-3" parent="R003-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="200" y="34" as="geometry" />
-        </mxCell>
-        <mxCell id="R003-4" parent="R003-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The System Admin shall be able to make any user a Manager or an Admin.&quot;" vertex="1">
-          <mxGeometry height="111" width="200" y="42" as="geometry" />
-        </mxCell>
-        <mxCell id="R003-5" parent="R003-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R003&quot;" vertex="1">
-          <mxGeometry height="16" width="200" y="153" as="geometry" />
-        </mxCell>
-        <mxCell id="R003-6" parent="R003-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
-          <mxGeometry height="18" width="200" y="169" as="geometry" />
-        </mxCell>
-        <mxCell id="R004-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
-          <mxGeometry height="187" width="200" x="90" y="540" as="geometry" />
-        </mxCell>
-        <mxCell id="R004-1" parent="R004-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
-          <mxGeometry height="16" width="200" as="geometry" />
-        </mxCell>
-        <mxCell id="R004-2" parent="R004-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Admin protection" vertex="1">
-          <mxGeometry height="18" width="200" y="16" as="geometry" />
-        </mxCell>
-        <mxCell id="R004-3" parent="R004-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="200" y="34" as="geometry" />
-        </mxCell>
-        <mxCell id="R004-4" parent="R004-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;An admin shall not demote another admin but may demote themselves; the last admin shall not be demoted or deleted.&quot;" vertex="1">
-          <mxGeometry height="111" width="200" y="42" as="geometry" />
-        </mxCell>
-        <mxCell id="R004-5" parent="R004-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R004&quot;" vertex="1">
-          <mxGeometry height="16" width="200" y="153" as="geometry" />
-        </mxCell>
-        <mxCell id="R004-6" parent="R004-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
-          <mxGeometry height="18" width="200" y="169" as="geometry" />
-        </mxCell>
-        <mxCell id="R005-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
-          <mxGeometry height="187" width="200" x="310" y="540" as="geometry" />
-        </mxCell>
-        <mxCell id="R005-1" parent="R005-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
-          <mxGeometry height="16" width="200" as="geometry" />
-        </mxCell>
-        <mxCell id="R005-2" parent="R005-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Create accounts" vertex="1">
-          <mxGeometry height="18" width="200" y="16" as="geometry" />
-        </mxCell>
-        <mxCell id="R005-3" parent="R005-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="8" width="200" y="34" as="geometry" />
-        </mxCell>
-        <mxCell id="R005-4" parent="R005-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;Managers and admins shall be able to create customer and driver accounts.&quot;" vertex="1">
-          <mxGeometry height="111" width="200" y="42" as="geometry" />
-        </mxCell>
-        <mxCell id="R005-5" parent="R005-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R005&quot;" vertex="1">
-          <mxGeometry height="16" width="200" y="153" as="geometry" />
-        </mxCell>
-        <mxCell id="R005-6" parent="R005-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
-          <mxGeometry height="18" width="200" y="169" as="geometry" />
-        </mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-1" parent="1" style="html=1;shape=mxgraph.sysml.package;html=1;overflow=fill;whiteSpace=wrap;labelX=239.57;" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:10px;text-align:left;&quot;&gt;&lt;b&gt;req [Package] LSBS requirements&lt;/b&gt;&lt;/p&gt;" vertex="1"><mxGeometry height="1070" width="1160" x="70" y="70" as="geometry" /></mxCell>
+        <mxCell id="L-acc" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" value="Accounts" vertex="1"><mxGeometry height="30" width="200" x="230" y="100" as="geometry" /></mxCell>
+        <mxCell id="L-acc-tc" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" value="Test cases" vertex="1"><mxGeometry height="30" width="180" x="490" y="100" as="geometry" /></mxCell>
+        <mxCell id="L-book" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" value="Booking" vertex="1"><mxGeometry height="30" width="200" x="740" y="100" as="geometry" /></mxCell>
+        <mxCell id="L-book-tc" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" value="Test cases" vertex="1"><mxGeometry height="30" width="180" x="1000" y="100" as="geometry" /></mxCell>
+        <mxCell id="R001-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1"><mxGeometry height="156" width="200" x="230" y="160" as="geometry" /></mxCell>
+        <mxCell id="R001-1" parent="R001-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1"><mxGeometry height="16" width="200" as="geometry" /></mxCell>
+        <mxCell id="R001-2" parent="R001-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Register and log in" vertex="1"><mxGeometry height="18" width="200" y="16" as="geometry" /></mxCell>
+        <mxCell id="R001-3" parent="R001-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1"><mxGeometry height="8" width="200" y="34" as="geometry" /></mxCell>
+        <mxCell id="R001-4" parent="R001-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;A customer shall be able to register, and all users shall be able to log in.&quot;" vertex="1"><mxGeometry height="80" width="200" y="42" as="geometry" /></mxCell>
+        <mxCell id="R001-5" parent="R001-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R001&quot;" vertex="1"><mxGeometry height="16" width="200" y="122" as="geometry" /></mxCell>
+        <mxCell id="R001-6" parent="R001-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1"><mxGeometry height="18" width="200" y="138" as="geometry" /></mxCell>
+        <mxCell id="R002-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1"><mxGeometry height="156" width="200" x="230" y="356" as="geometry" /></mxCell>
+        <mxCell id="R002-1" parent="R002-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1"><mxGeometry height="16" width="200" as="geometry" /></mxCell>
+        <mxCell id="R002-2" parent="R002-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Role-based access" vertex="1"><mxGeometry height="18" width="200" y="16" as="geometry" /></mxCell>
+        <mxCell id="R002-3" parent="R002-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1"><mxGeometry height="8" width="200" y="34" as="geometry" /></mxCell>
+        <mxCell id="R002-4" parent="R002-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The system shall support four roles (System Admin, Manager, Driver, Customer) and limit each function to the right roles.&quot;" vertex="1"><mxGeometry height="80" width="200" y="42" as="geometry" /></mxCell>
+        <mxCell id="R002-5" parent="R002-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R002&quot;" vertex="1"><mxGeometry height="16" width="200" y="122" as="geometry" /></mxCell>
+        <mxCell id="R002-6" parent="R002-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1"><mxGeometry height="18" width="200" y="138" as="geometry" /></mxCell>
+        <mxCell id="R003-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1"><mxGeometry height="156" width="200" x="230" y="552" as="geometry" /></mxCell>
+        <mxCell id="R003-1" parent="R003-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1"><mxGeometry height="16" width="200" as="geometry" /></mxCell>
+        <mxCell id="R003-2" parent="R003-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Promote users" vertex="1"><mxGeometry height="18" width="200" y="16" as="geometry" /></mxCell>
+        <mxCell id="R003-3" parent="R003-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1"><mxGeometry height="8" width="200" y="34" as="geometry" /></mxCell>
+        <mxCell id="R003-4" parent="R003-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The System Admin shall be able to make any user a Manager or an Admin.&quot;" vertex="1"><mxGeometry height="80" width="200" y="42" as="geometry" /></mxCell>
+        <mxCell id="R003-5" parent="R003-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R003&quot;" vertex="1"><mxGeometry height="16" width="200" y="122" as="geometry" /></mxCell>
+        <mxCell id="R003-6" parent="R003-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1"><mxGeometry height="18" width="200" y="138" as="geometry" /></mxCell>
+        <mxCell id="R004-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1"><mxGeometry height="156" width="200" x="230" y="748" as="geometry" /></mxCell>
+        <mxCell id="R004-1" parent="R004-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1"><mxGeometry height="16" width="200" as="geometry" /></mxCell>
+        <mxCell id="R004-2" parent="R004-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Admin protection" vertex="1"><mxGeometry height="18" width="200" y="16" as="geometry" /></mxCell>
+        <mxCell id="R004-3" parent="R004-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1"><mxGeometry height="8" width="200" y="34" as="geometry" /></mxCell>
+        <mxCell id="R004-4" parent="R004-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;An admin shall not demote another admin but may demote themselves; the last admin shall not be demoted or deleted.&quot;" vertex="1"><mxGeometry height="80" width="200" y="42" as="geometry" /></mxCell>
+        <mxCell id="R004-5" parent="R004-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R004&quot;" vertex="1"><mxGeometry height="16" width="200" y="122" as="geometry" /></mxCell>
+        <mxCell id="R004-6" parent="R004-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1"><mxGeometry height="18" width="200" y="138" as="geometry" /></mxCell>
+        <mxCell id="R005-0" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1"><mxGeometry height="156" width="200" x="230" y="944" as="geometry" /></mxCell>
+        <mxCell id="R005-1" parent="R005-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1"><mxGeometry height="16" width="200" as="geometry" /></mxCell>
+        <mxCell id="R005-2" parent="R005-0" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Create accounts" vertex="1"><mxGeometry height="18" width="200" y="16" as="geometry" /></mxCell>
+        <mxCell id="R005-3" parent="R005-0" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1"><mxGeometry height="8" width="200" y="34" as="geometry" /></mxCell>
+        <mxCell id="R005-4" parent="R005-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;Managers and admins shall be able to create customer and driver accounts.&quot;" vertex="1"><mxGeometry height="80" width="200" y="42" as="geometry" /></mxCell>
+        <mxCell id="R005-5" parent="R005-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R005&quot;" vertex="1"><mxGeometry height="16" width="200" y="122" as="geometry" /></mxCell>
+        <mxCell id="R005-6" parent="R005-0" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1"><mxGeometry height="18" width="200" y="138" as="geometry" /></mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-2" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1"><mxGeometry height="156" width="200" x="740" y="160" as="geometry" /></mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-3" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1"><mxGeometry height="16" width="200" as="geometry" /></mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-4" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Book a pickup" vertex="1"><mxGeometry height="18" width="200" y="16" as="geometry" /></mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-5" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1"><mxGeometry height="8" width="200" y="34" as="geometry" /></mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-6" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The customer shall book a pickup, by choosing a store, a service, a 30 min slot and address.&quot;" vertex="1"><mxGeometry height="80" width="200" y="42" as="geometry" /></mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-7" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R009&quot;" vertex="1"><mxGeometry height="16" width="200" y="122" as="geometry" /></mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-8" parent="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1"><mxGeometry height="18" width="200" y="138" as="geometry" /></mxCell>
+        <mxCell id="_qxp7GEGSiDKVrqC5Cvn-12" edge="1" parent="_qxp7GEGSiDKVrqC5Cvn-2" source="_qxp7GEGSiDKVrqC5Cvn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;" target="_qxp7GEGSiDKVrqC5Cvn-8"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="A-customer" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Customer" vertex="1"><mxGeometry height="60" width="30" x="110" y="208" as="geometry" /></mxCell>
+        <mxCell id="A-driver" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Driver" vertex="1"><mxGeometry height="60" width="30" x="110" y="404" as="geometry" /></mxCell>
+        <mxCell id="A-admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="System Admin" vertex="1"><mxGeometry height="60" width="30" x="110" y="796" as="geometry" /></mxCell>
+        <mxCell id="A-manager" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Manager" vertex="1"><mxGeometry height="60" width="30" x="110" y="992" as="geometry" /></mxCell>
+        <mxCell id="TC01" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;spacing=6;" value="&amp;lt;&amp;lt;testCase&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TC01: Login check&lt;/b&gt;&lt;br&gt;Register and log in succeed; a wrong password is rejected." vertex="1"><mxGeometry height="90" width="180" x="490" y="193" as="geometry" /></mxCell>
+        <mxCell id="TC02" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;spacing=6;" value="&amp;lt;&amp;lt;testCase&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TC02: Role check&lt;/b&gt;&lt;br&gt;A customer calling a manager endpoint gets 403." vertex="1"><mxGeometry height="90" width="180" x="490" y="389" as="geometry" /></mxCell>
+        <mxCell id="TC03" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;spacing=6;" value="&amp;lt;&amp;lt;testCase&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TC03: Admin rules&lt;/b&gt;&lt;br&gt;Admin promotes a user to manager; demoting the last admin is rejected." vertex="1"><mxGeometry height="90" width="180" x="490" y="683" as="geometry" /></mxCell>
+        <mxCell id="TC05" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;spacing=6;" value="&amp;lt;&amp;lt;testCase&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TC05: Valid booking&lt;/b&gt;&lt;br&gt;A valid booking creates a ticket with a UUID and status Awaiting pickup." vertex="1"><mxGeometry height="90" width="180" x="1000" y="193" as="geometry" /></mxCell>
+        <mxCell id="E01" edge="1" parent="1" source="R001-0" target="A-customer" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell>
+        <mxCell id="E02" edge="1" parent="1" source="_qxp7GEGSiDKVrqC5Cvn-2" target="A-customer" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="840" y="142" /><mxPoint x="125" y="142" /></Array></mxGeometry></mxCell>
+        <mxCell id="E03" edge="1" parent="1" source="R003-0" target="A-admin" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell>
+        <mxCell id="E04" edge="1" parent="1" source="R004-0" target="A-admin" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell>
+        <mxCell id="E05" edge="1" parent="1" source="R005-0" target="A-admin" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell>
+        <mxCell id="E06" edge="1" parent="1" source="R005-0" target="A-manager" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell>
+        <mxCell id="E07" edge="1" parent="1" source="TC01" target="R001-0" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" value="&amp;lt;&amp;lt;verify&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell>
+        <mxCell id="E08" edge="1" parent="1" source="TC02" target="R002-0" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" value="&amp;lt;&amp;lt;verify&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell>
+        <mxCell id="E09" edge="1" parent="1" source="TC03" target="R003-0" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" value="&amp;lt;&amp;lt;verify&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell>
+        <mxCell id="E10" edge="1" parent="1" source="TC03" target="R004-0" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" value="&amp;lt;&amp;lt;verify&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell>
+        <mxCell id="E11" edge="1" parent="1" source="TC05" target="_qxp7GEGSiDKVrqC5Cvn-2" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" value="&amp;lt;&amp;lt;verify&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell>
+        <mxCell id="E12" edge="1" parent="1" source="R004-0" target="R003-0" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell>
       </root>
     </mxGraphModel>
   </diagram>
