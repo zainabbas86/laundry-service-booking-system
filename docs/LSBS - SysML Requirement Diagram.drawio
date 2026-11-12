@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="_qxp7GEGSiDKVrqC5Cvn-410" parent="1" style="html=1;shape=mxgraph.sysml.package;html=1;overflow=fill;whiteSpace=wrap;labelX=239.57;" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:10px;text-align:left;&quot;&gt;&lt;b&gt;req [Package] LSBS requirements&lt;/b&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="1090" width="1520" x="200" y="70" as="geometry" />
+          <mxGeometry height="1290" width="1520" x="200" y="70" as="geometry" />
         </mxCell>
         <mxCell id="_qxp7GEGSiDKVrqC5Cvn-411" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" value="Accounts" vertex="1">
           <mxGeometry height="30" width="200" x="230" y="100" as="geometry" />
@@ -433,6 +433,281 @@
               <mxPoint x="170" y="1145" />
               <mxPoint x="170" y="434" />
               
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-r014" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="156" width="200" x="230" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r014-a" parent="wfa-r014" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r014-b" parent="wfa-r014" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Login required to book" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r014-c" parent="wfa-r014" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r014-d" parent="wfa-r014" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;A customer shall be logged in before booking a pickup online.&quot;" vertex="1">
+          <mxGeometry height="80" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r014-e" parent="wfa-r014" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R014&quot;" vertex="1">
+          <mxGeometry height="16" width="200" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r014-f" parent="wfa-r014" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
+          <mxGeometry height="18" width="200" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r015" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="156" width="200" x="740" y="944" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r015-a" parent="wfa-r015" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r015-b" parent="wfa-r015" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Choose one service" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r015-c" parent="wfa-r015" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r015-d" parent="wfa-r015" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The customer shall choose exactly one service per ticket: wash and fold, dry cleaning, or ironing only.&quot;" vertex="1">
+          <mxGeometry height="80" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r015-e" parent="wfa-r015" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R015&quot;" vertex="1">
+          <mxGeometry height="16" width="200" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r015-f" parent="wfa-r015" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
+          <mxGeometry height="18" width="200" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r016" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="156" width="200" x="740" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r016-a" parent="wfa-r016" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r016-b" parent="wfa-r016" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Booking validation" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r016-c" parent="wfa-r016" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r016-d" parent="wfa-r016" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The system shall reject a booking when a required field is missing or invalid, or when the pickup slot is already taken.&quot;" vertex="1">
+          <mxGeometry height="80" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r016-e" parent="wfa-r016" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R016&quot;" vertex="1">
+          <mxGeometry height="16" width="200" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r016-f" parent="wfa-r016" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
+          <mxGeometry height="18" width="200" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r017" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="156" width="200" x="1250" y="944" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r017-a" parent="wfa-r017" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r017-b" parent="wfa-r017" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Manager booking list" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r017-c" parent="wfa-r017" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r017-d" parent="wfa-r017" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;The manager shall see all Awaiting pickup bookings for their assigned stores, and assign a driver or cancel each one.&quot;" vertex="1">
+          <mxGeometry height="80" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r017-e" parent="wfa-r017" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R017&quot;" vertex="1">
+          <mxGeometry height="16" width="200" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r017-f" parent="wfa-r017" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
+          <mxGeometry height="18" width="200" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r018" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="156" width="200" x="1250" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r018-a" parent="wfa-r018" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r018-b" parent="wfa-r018" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Store assignment" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r018-c" parent="wfa-r018" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r018-d" parent="wfa-r018" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;Managers and drivers shall be assigned to one or more stores, and each booking shall be handled by the manager of the store the customer chose.&quot;" vertex="1">
+          <mxGeometry height="80" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r018-e" parent="wfa-r018" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;R018&quot;" vertex="1">
+          <mxGeometry height="16" width="200" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-r018-f" parent="wfa-r018" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Priority=&quot;Must&quot;" vertex="1">
+          <mxGeometry height="18" width="200" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-tc13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;spacing=6;" value="&amp;lt;&amp;lt;testCase&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TC13: Login required&lt;/b&gt;&lt;br&gt;Booking without a valid session is rejected and the customer is sent to log in." vertex="1">
+          <mxGeometry height="90" width="180" x="490" y="1213" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-tc14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;spacing=6;" value="&amp;lt;&amp;lt;testCase&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TC14: Service choice&lt;/b&gt;&lt;br&gt;A booking stores one of the three services; an unknown or missing service is rejected." vertex="1">
+          <mxGeometry height="90" width="180" x="1000" y="977" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-tc15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;spacing=6;" value="&amp;lt;&amp;lt;testCase&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TC15: Invalid input&lt;/b&gt;&lt;br&gt;A booking with a missing address or an already-taken pickup slot is rejected with an error." vertex="1">
+          <mxGeometry height="90" width="180" x="1000" y="1213" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-tc16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;spacing=6;" value="&amp;lt;&amp;lt;testCase&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TC16: Manager list&lt;/b&gt;&lt;br&gt;The manager sees the Awaiting pickup bookings for their stores and can assign a driver or cancel." vertex="1">
+          <mxGeometry height="90" width="180" x="1500" y="977" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-tc17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;spacing=6;" value="&amp;lt;&amp;lt;testCase&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TC17: Store assignment&lt;/b&gt;&lt;br&gt;A manager assigned to store A sees store A bookings; a manager with no store sees none." vertex="1">
+          <mxGeometry height="90" width="180" x="1500" y="1213" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-v13" edge="1" parent="1" source="wfa-tc13" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" target="wfa-r014" value="&amp;lt;&amp;lt;verify&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-v14" edge="1" parent="1" source="wfa-tc14" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" target="wfa-r015" value="&amp;lt;&amp;lt;verify&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-v15" edge="1" parent="1" source="wfa-tc15" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" target="wfa-r016" value="&amp;lt;&amp;lt;verify&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-v16" edge="1" parent="1" source="wfa-tc16" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" target="wfa-r017" value="&amp;lt;&amp;lt;verify&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-v17" edge="1" parent="1" source="wfa-tc17" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;" target="wfa-r018" value="&amp;lt;&amp;lt;verify&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wfa-t14" edge="1" parent="1" source="wfa-r014" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-508" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="1258" />
+              <mxPoint x="190" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="238" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-t15" edge="1" parent="1" source="wfa-r015" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-508" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="1022" />
+              <mxPoint x="700" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="238" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-t16" edge="1" parent="1" source="wfa-r016" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-508" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="1258" />
+              <mxPoint x="700" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="238" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-t17" edge="1" parent="1" source="wfa-r017" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-511" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210" y="1022" />
+              <mxPoint x="1210" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="1022" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-t18a" edge="1" parent="1" source="wfa-r018" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-510" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210" y="1258" />
+              <mxPoint x="1210" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="826" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-t18b" edge="1" parent="1" source="wfa-r018" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-511" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210" y="1258" />
+              <mxPoint x="1210" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="1022" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-fix-R002-admin" edge="1" parent="1" source="_qxp7GEGSiDKVrqC5Cvn-424" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-510" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="434" />
+              <mxPoint x="190" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="826" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-fix-R007-customer" edge="1" parent="1" source="_qxp7GEGSiDKVrqC5Cvn-459" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-508" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="434" />
+              <mxPoint x="700" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="238" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-fix-R008-customer" edge="1" parent="1" source="_qxp7GEGSiDKVrqC5Cvn-466" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-508" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="630" />
+              <mxPoint x="700" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="238" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-fix-R010-customer" edge="1" parent="1" source="_qxp7GEGSiDKVrqC5Cvn-473" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-508" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="826" />
+              <mxPoint x="700" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="238" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-fix-R012-driver" edge="1" parent="1" source="_qxp7GEGSiDKVrqC5Cvn-494" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-509" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210" y="630" />
+              <mxPoint x="1210" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="434" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-fix-R013-customer" edge="1" parent="1" source="_qxp7GEGSiDKVrqC5Cvn-501" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-508" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210" y="826" />
+              <mxPoint x="1210" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="238" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-fix-R013-manager" edge="1" parent="1" source="_qxp7GEGSiDKVrqC5Cvn-501" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-511" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210" y="826" />
+              <mxPoint x="1210" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="1022" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wfa-fix-R013-admin" edge="1" parent="1" source="_qxp7GEGSiDKVrqC5Cvn-501" style="html=1;dashed=1;endArrow=open;endSize=10;rounded=0;labelBackgroundColor=default;fontSize=11;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_qxp7GEGSiDKVrqC5Cvn-510" value="&amp;lt;&amp;lt;trace&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210" y="826" />
+              <mxPoint x="1210" y="1145" />
+              <mxPoint x="170" y="1145" />
+              <mxPoint x="170" y="826" />
             </Array>
           </mxGeometry>
         </mxCell>
