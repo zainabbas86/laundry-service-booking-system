@@ -1,0 +1,3 @@
+# Check out draw.io diagrams with CRLF line endings, as the diagrams.net
+# editor writes them, and stop whole-file diffs caused by line endings.
+*.drawio text eol=crlf
