@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My jobs · LSBS Driver</title>
+</head>
+<body style="margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;background:#f3f4f6;color:#111827;line-height:1.5;">
+
+<header style="background:#2563eb;color:#ffffff;padding:16px 24px;">
+  <div style="max-width:1040px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+    <div style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;">
+      <span aria-hidden="true" style="width:30px;height:30px;border-radius:8px;background:rgba(255,255,255,0.22);display:grid;place-items:center;font-size:14px;">L</span>
+      <span>LSBS</span>
+    </div>
+    <nav aria-label="Main" style="display:flex;gap:20px;font-size:14px;">
+      <a href="#jobs" aria-current="page" style="color:#ffffff;text-decoration:none;padding:4px 0;border-bottom:2px solid #ffffff;font-weight:600;">My jobs</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:8px;font-size:14px;background:rgba(255,255,255,0.16);padding:6px 12px 6px 6px;border-radius:999px;">
+      <span aria-hidden="true" style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.25);display:grid;place-items:center;font-size:11px;font-weight:700;">EO</span>
+      <span>Eowyn</span>
+    </div>
+  </div>
+</header>
+
+<main id="jobs" style="max-width:900px;margin:32px auto 64px;padding:0 20px;">
+  <h1 style="margin:0 0 8px;font-size:26px;line-height:1.3;">My jobs</h1>
+  <p style="margin:0 0 20px;color:#4b5563;font-size:14px;">Pickups assigned to you for Sydney CBD. Mark a bag collected, then hand it in at the laundry.</p>
+
+  <div id="flash" role="status" style="display:none;align-items:flex-start;gap:8px;padding:12px;border:1px solid #bbf7d0;border-radius:10px;background:#f0fdf4;color:#166534;font-size:13px;margin-bottom:16px;">
+    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="flash-text"></span>
+  </div>
+
+  <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:14px;padding:24px;box-shadow:0 1px 3px rgba(17,24,39,0.08);">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
+      <h2 style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:#6b7280;">Today</h2>
+      <span id="count" style="font-size:12px;color:#6b7280;">3 jobs left</span>
+    </div>
+
+    <div id="rows" style="display:grid;gap:10px;">
+
+      <div class="job" data-ticket="3f2b8c1e" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 14px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+        <span style="flex:1 1 240px;min-width:0;">
+          <span style="display:block;font-weight:600;">The Citadel, Minas Tirith</span>
+          <span style="display:block;font-size:12px;color:#6b7280;">Boromir | Thu 12 Nov, 10:00-10:30 | ticket 3f2b8c1e</span>
+        </span>
+        <span class="badge" style="padding:3px 10px;border-radius:999px;background:#eff6ff;color:#1d4ed8;font-size:12px;font-weight:600;">Pickup assigned</span>
+        <button type="button" class="action" style="padding:8px 14px;border:1px solid #2563eb;border-radius:8px;background:#2563eb;color:#ffffff;font-size:14px;font-family:inherit;font-weight:600;cursor:pointer;">Mark collected</button>
+      </div>
+
+      <div class="job" data-ticket="7c19de04" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 14px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+        <span style="flex:1 1 240px;min-width:0;">
+          <span style="display:block;font-weight:600;">1 Bag End St, Hobbiton</span>
+          <span style="display:block;font-size:12px;color:#6b7280;">Frodo Baggins | Thu 12 Nov, 10:30-11:00 | ticket 7c19de04</span>
+        </span>
+        <span class="badge" style="padding:3px 10px;border-radius:999px;background:#fffbeb;color:#92400e;font-size:12px;font-weight:600;">Collected</span>
+        <button type="button" class="action" style="padding:8px 14px;border:1px solid #2563eb;border-radius:8px;background:#2563eb;color:#ffffff;font-size:14px;font-family:inherit;font-weight:600;cursor:pointer;">Received at laundry</button>
+      </div>
+
+      <div class="job" data-ticket="b02a4f77" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 14px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+        <span style="flex:1 1 240px;min-width:0;">
+          <span style="display:block;font-weight:600;">Black Gate, Mordor</span>
+          <span style="display:block;font-size:12px;color:#6b7280;">Sauron | Thu 12 Nov, 11:00-11:30 | ticket b02a4f77</span>
+        </span>
+        <span class="badge" style="padding:3px 10px;border-radius:999px;background:#eff6ff;color:#1d4ed8;font-size:12px;font-weight:600;">Pickup assigned</span>
+        <button type="button" class="action" style="padding:8px 14px;border:1px solid #2563eb;border-radius:8px;background:#2563eb;color:#ffffff;font-size:14px;font-family:inherit;font-weight:600;cursor:pointer;">Mark collected</button>
+      </div>
+
+    </div>
+
+    <div id="empty" style="display:none;flex-direction:column;align-items:center;gap:6px;padding:28px 20px;border:1px dashed #d1d5db;border-radius:10px;text-align:center;">
+      <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line><line x1="8" y1="15" x2="16" y2="15"></line></svg>
+      <span style="font-size:14px;font-weight:600;">No jobs left today</span>
+      <span style="font-size:12px;color:#6b7280;">Assigned pickups for Sydney CBD appear here.</span>
+    </div>
+
+  </section>
+</main>
+
+<script>
+(function () {
+  var badges = {
+    'Pickup assigned': ['#eff6ff', '#1d4ed8'],
+    'Collected': ['#fffbeb', '#92400e'],
+    'Processing': ['#f5f3ff', '#6d28d9']
+  };
+  var jobs = document.querySelectorAll('.job');
+  var count = document.getElementById('count');
+  var empty = document.getElementById('empty');
+  var flash = document.getElementById('flash');
+  var flashText = document.getElementById('flash-text');
+
+  function setBadge(el, status) {
+    el.textContent = status;
+    el.style.background = badges[status][0];
+    el.style.color = badges[status][1];
+  }
+
+  function say(message) {
+    flashText.textContent = message;
+    flash.style.display = 'flex';
+  }
+
+  function refresh() {
+    var left = 0;
+    jobs.forEach(function (job) {
+      if (job.querySelector('.badge').textContent !== 'Processing') left++;
+    });
+    count.textContent = left + (left === 1 ? ' job left' : ' jobs left');
+    var allDone = left === 0;
+    document.getElementById('rows').style.display = allDone ? 'none' : 'grid';
+    empty.style.display = allDone ? 'flex' : 'none';
+  }
+
+  jobs.forEach(function (job) {
+    var badge = job.querySelector('.badge');
+    var action = job.querySelector('.action');
+    var ticket = job.getAttribute('data-ticket');
+
+    action.addEventListener('click', function () {
+      if (badge.textContent === 'Pickup assigned') {
+        setBadge(badge, 'Collected');
+        action.textContent = 'Received at laundry';
+        say('Ticket ' + ticket + ' marked collected.');
+      } else if (badge.textContent === 'Collected') {
+        setBadge(badge, 'Processing');
+        action.textContent = 'Done';
+        action.disabled = true;
+        action.style.background = '#9ca3af';
+        action.style.borderColor = '#9ca3af';
+        action.style.cursor = 'not-allowed';
+        say('Ticket ' + ticket + ' received at the laundry. Status is now Processing.');
+      }
+      refresh();
+    });
+  });
+
+  refresh();
+})();
+</script>
+
+</body>
+</html>
