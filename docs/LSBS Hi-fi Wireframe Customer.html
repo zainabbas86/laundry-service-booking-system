@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a pickup | LSBS</title>
+</head>
+<body style="margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;background:#f3f4f6;color:#111827;line-height:1.5;">
+
+<header style="background:#2563eb;color:#ffffff;padding:16px 24px;">
+  <div style="max-width:1040px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+    <div style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;">
+      <span aria-hidden="true" style="width:30px;height:30px;border-radius:8px;background:rgba(255,255,255,0.22);display:grid;place-items:center;font-size:14px;">L</span>
+      <span>LSBS</span>
+    </div>
+    <nav aria-label="Main" style="display:flex;gap:20px;font-size:14px;">
+      <a href="#book" aria-current="page" style="color:#ffffff;text-decoration:none;padding:4px 0;border-bottom:2px solid #ffffff;font-weight:600;">Book a pickup</a>
+      <a href="#book" style="color:#dbeafe;text-decoration:none;padding:4px 0;border-bottom:2px solid transparent;">My tickets</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:8px;font-size:14px;background:rgba(255,255,255,0.16);padding:6px 12px 6px 6px;border-radius:999px;">
+      <span aria-hidden="true" style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.25);display:grid;place-items:center;font-size:11px;font-weight:700;">FB</span>
+      <span>Frodo Baggins</span>
+    </div>
+  </div>
+</header>
+
+<main id="book" style="max-width:760px;margin:32px auto 64px;padding:0 20px;">
+  <h1 style="margin:0 0 8px;font-size:26px;line-height:1.3;">Book a pickup</h1>
+  <p style="margin:0 0 20px;color:#4b5563;font-size:14px;">We collect from your address. You get a ticket number as soon as you confirm.</p>
+
+  <div style="background:#ffffff;border:1px solid #e5e7eb;border-radius:14px;padding:24px;box-shadow:0 1px 3px rgba(17,24,39,0.08);">
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
+      <div>
+        <label for="store" style="display:block;font-size:13px;font-weight:600;color:#374151;margin-bottom:6px;">Store</label>
+        <select id="store" style="width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;font-size:14px;font-family:inherit;color:#111827;">
+          <option>Sydney CBD</option>
+        </select>
+      </div>
+      <div>
+        <label for="date" style="display:block;font-size:13px;font-weight:600;color:#374151;margin-bottom:6px;">Pickup date</label>
+        <select id="date" style="width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;font-size:14px;font-family:inherit;color:#111827;">
+          <option>Thu 12 Nov</option>
+          <option>Fri 13 Nov</option>
+          <option>Sat 14 Nov</option>
+        </select>
+      </div>
+    </div>
+
+    <fieldset style="border:0;padding:0;margin:0 0 20px;">
+      <legend style="padding:0;font-size:13px;font-weight:600;color:#374151;margin-bottom:8px;">Service</legend>
+      <div style="display:grid;gap:10px;">
+        <label data-card style="display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid #e5e7eb;border-radius:10px;background:#ffffff;cursor:pointer;">
+          <input type="radio" name="service" value="wash" data-name="Wash and fold" checked style="margin:3px 0 0;accent-color:#2563eb;">
+          <span style="display:block;">
+            <span style="display:block;font-size:14px;font-weight:600;">Wash and fold</span>
+            <span style="display:block;font-size:12px;color:#6b7280;">Everyday clothes</span>
+          </span>
+        </label>
+        <label data-card style="display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid #e5e7eb;border-radius:10px;background:#ffffff;cursor:pointer;">
+          <input type="radio" name="service" value="dry" data-name="Dry cleaning" style="margin:3px 0 0;accent-color:#2563eb;">
+          <span style="display:block;">
+            <span style="display:block;font-size:14px;font-weight:600;">Dry cleaning</span>
+            <span style="display:block;font-size:12px;color:#6b7280;">Suits, coats, delicates</span>
+          </span>
+        </label>
+        <label data-card style="display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid #e5e7eb;border-radius:10px;background:#ffffff;cursor:pointer;">
+          <input type="radio" name="service" value="iron" data-name="Ironing only" style="margin:3px 0 0;accent-color:#2563eb;">
+          <span style="display:block;">
+            <span style="display:block;font-size:14px;font-weight:600;">Ironing only</span>
+            <span style="display:block;font-size:12px;color:#6b7280;">Clean clothes, pressed</span>
+          </span>
+        </label>
+      </div>
+    </fieldset>
+
+    <div style="margin-bottom:20px;">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px;">
+        <span id="slot-label" style="font-size:13px;font-weight:600;color:#374151;">Pickup slot</span>
+        <span id="slot-hint" style="font-size:12px;color:#6b7280;">30 minutes | Thu 12 Nov | one pickup per slot</span>
+      </div>
+
+      <div id="slots" role="group" aria-labelledby="slot-label" style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;">
+        <button type="button" data-time="9:00" aria-pressed="false" aria-label="9:00" style="padding:9px 4px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#111827;font-size:13px;font-family:inherit;cursor:pointer;">9:00</button>
+        <button type="button" data-time="9:30" aria-pressed="false" aria-label="9:30" style="padding:9px 4px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#111827;font-size:13px;font-family:inherit;cursor:pointer;">9:30</button>
+        <button type="button" data-time="10:00" aria-pressed="false" aria-label="10:00, taken" style="padding:9px 4px;border:1px solid #d1d5db;border-radius:8px;background:#f3f4f6;color:#9ca3af;font-size:13px;font-family:inherit;cursor:not-allowed;text-decoration:line-through;">10:00</button>
+        <button type="button" data-time="10:30" aria-pressed="false" aria-label="10:30" style="padding:9px 4px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#111827;font-size:13px;font-family:inherit;cursor:pointer;">10:30</button>
+        <button type="button" data-time="11:00" aria-pressed="false" aria-label="11:00" style="padding:9px 4px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#111827;font-size:13px;font-family:inherit;cursor:pointer;">11:00</button>
+        <button type="button" data-time="11:30" aria-pressed="false" aria-label="11:30" style="padding:9px 4px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#111827;font-size:13px;font-family:inherit;cursor:pointer;">11:30</button>
+        <button type="button" data-time="12:00" aria-pressed="false" aria-label="12:00" style="padding:9px 4px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#111827;font-size:13px;font-family:inherit;cursor:pointer;">12:00</button>
+        <button type="button" data-time="12:30" aria-pressed="false" aria-label="12:30" style="padding:9px 4px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#111827;font-size:13px;font-family:inherit;cursor:pointer;">12:30</button>
+      </div>
+
+      <div id="slot-error" role="alert" style="display:none;margin-top:12px;align-items:flex-start;gap:8px;padding:12px;border:1px solid #fecaca;border-radius:10px;background:#fef2f2;color:#b91c1c;font-size:13px;">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+        <span><strong id="slot-error-time">10:00</strong> on <span id="slot-error-date">Thu 12 Nov</span> was just taken. Choose another slot.</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:20px;">
+      <label for="address" style="display:block;font-size:13px;font-weight:600;color:#374151;margin-bottom:6px;">Pickup address</label>
+      <input id="address" type="text" value="1 Bag End St, Hobbiton" style="width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;font-size:14px;font-family:inherit;color:#111827;">
+    </div>
+
+    <fieldset style="border:0;padding:0;margin:0 0 20px;">
+      <legend style="padding:0;font-size:13px;font-weight:600;color:#374151;margin-bottom:8px;">Return method</legend>
+      <div style="display:grid;gap:10px;">
+        <label data-card style="display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid #e5e7eb;border-radius:10px;background:#ffffff;cursor:pointer;">
+          <input type="radio" name="return" value="delivery" checked style="margin:3px 0 0;accent-color:#2563eb;">
+          <span style="display:block;">
+            <span style="display:block;font-size:14px;font-weight:600;">Delivery</span>
+            <span style="display:block;font-size:12px;color:#6b7280;">A driver brings it back</span>
+          </span>
+        </label>
+        <label data-card style="display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid #e5e7eb;border-radius:10px;background:#ffffff;cursor:pointer;">
+          <input type="radio" name="return" value="collect" style="margin:3px 0 0;accent-color:#2563eb;">
+          <span style="display:block;">
+            <span style="display:block;font-size:14px;font-weight:600;">Collect from store</span>
+            <span style="display:block;font-size:12px;color:#6b7280;">Pick it up at Sydney CBD</span>
+          </span>
+        </label>
+      </div>
+
+      <div id="delivery-block" style="margin-top:16px;padding:14px;border:1px solid #e5e7eb;border-radius:10px;background:#f9fafb;">
+        <label for="delivery" style="display:block;font-size:13px;font-weight:600;color:#374151;margin-bottom:6px;">Delivery slot</label>
+        <select id="delivery" style="width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;font-size:14px;font-family:inherit;color:#111827;">
+          <option>Fri 13 Nov | 14:00-14:30</option>
+          <option>Fri 13 Nov | 14:30-15:00</option>
+          <option>Fri 13 Nov | 15:00-15:30</option>
+        </select>
+        <span style="display:block;margin-top:8px;font-size:12px;color:#6b7280;">You can change this until a driver is assigned for delivery.</span>
+      </div>
+    </fieldset>
+
+    <div id="slot-ok" role="status" style="display:none;margin-bottom:20px;align-items:flex-start;gap:8px;padding:12px;border:1px solid #bbf7d0;border-radius:10px;background:#f0fdf4;color:#166534;font-size:13px;">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      <span><strong>Booking received.</strong> Ticket 7c19de04 | Awaiting pickup. A manager will assign a driver. <a href="#book" style="color:#15803d;">Track my ticket</a></span>
+    </div>
+
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid #e5e7eb;padding-top:16px;">
+      <span id="summary" style="font-size:14px;font-weight:600;color:#374151;">Wash and fold | choose a pickup slot</span>
+      <div style="display:flex;gap:8px;">
+        <button type="button" id="cancel" style="padding:10px 16px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#374151;font-size:14px;font-family:inherit;cursor:pointer;">Cancel</button>
+        <button type="button" id="confirm" disabled style="padding:10px 16px;border:1px solid #9ca3af;border-radius:8px;background:#9ca3af;color:#ffffff;font-size:14px;font-family:inherit;font-weight:600;cursor:not-allowed;">Confirm booking</button>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+(function () {
+  var taken = { '10:00': true };
+  var date = document.getElementById('date');
+  var hint = document.getElementById('slot-hint');
+  var summary = document.getElementById('summary');
+  var confirmBtn = document.getElementById('confirm');
+  var cancelBtn = document.getElementById('cancel');
+  var errorBox = document.getElementById('slot-error');
+  var errorTime = document.getElementById('slot-error-time');
+  var errorDate = document.getElementById('slot-error-date');
+  var okBox = document.getElementById('slot-ok');
+  var deliveryBlock = document.getElementById('delivery-block');
+  var slots = document.querySelectorAll('#slots button');
+  var cards = document.querySelectorAll('label[data-card]');
+  var slot = null;
+
+  function paint() {
+    cards.forEach(function (label) {
+      var on = label.querySelector('input').checked;
+      label.style.borderColor = on ? '#2563eb' : '#e5e7eb';
+      label.style.background = on ? '#eff6ff' : '#ffffff';
+    });
+
+    slots.forEach(function (b) {
+      var t = b.getAttribute('data-time');
+      var isTaken = taken[t] === true;
+      var isOn = slot === t;
+      b.setAttribute('aria-pressed', isOn ? 'true' : 'false');
+      b.style.background = isTaken ? '#f3f4f6' : (isOn ? '#2563eb' : '#ffffff');
+      b.style.color = isTaken ? '#9ca3af' : (isOn ? '#ffffff' : '#111827');
+      b.style.borderColor = isOn ? '#2563eb' : '#d1d5db';
+      b.style.textDecoration = isTaken ? 'line-through' : 'none';
+      b.style.cursor = isTaken ? 'not-allowed' : 'pointer';
+      b.style.fontWeight = isOn ? '600' : '400';
+    });
+
+    var svc = document.querySelector('input[name="service"]:checked');
+    summary.textContent = slot
+      ? svc.getAttribute('data-name') + ' | pickup ' + slot + ', ' + date.value
+      : svc.getAttribute('data-name') + ' | choose a pickup slot';
+
+    confirmBtn.disabled = !slot;
+    confirmBtn.style.background = slot ? '#2563eb' : '#9ca3af';
+    confirmBtn.style.borderColor = slot ? '#2563eb' : '#9ca3af';
+    confirmBtn.style.cursor = slot ? 'pointer' : 'not-allowed';
+
+    deliveryBlock.style.display = document.querySelector('input[name="return"]:checked').value === 'delivery' ? 'block' : 'none';
+    hint.textContent = '30 minutes | ' + date.value + ' | one pickup per slot';
+  }
+
+  slots.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = b.getAttribute('data-time');
+      if (taken[t] === true) {
+        slot = null;
+        errorTime.textContent = t;
+        errorDate.textContent = date.value;
+        errorBox.style.display = 'flex';
+        okBox.style.display = 'none';
+      } else {
+        slot = t;
+        errorBox.style.display = 'none';
+      }
+      paint();
+    });
+  });
+
+  cards.forEach(function (label) {
+    label.querySelector('input').addEventListener('change', paint);
+  });
+
+  date.addEventListener('change', paint);
+
+  confirmBtn.addEventListener('click', function () {
+    if (!slot) return;
+    okBox.style.display = 'flex';
+    okBox.scrollIntoView({ block: 'nearest' });
+  });
+
+  cancelBtn.addEventListener('click', function () {
+    slot = null;
+    document.querySelector('input[name="service"][value="wash"]').checked = true;
+    document.querySelector('input[name="return"][value="delivery"]').checked = true;
+    document.getElementById('address').value = '1 Bag End St, Hobbiton';
+    errorBox.style.display = 'none';
+    okBox.style.display = 'none';
+    paint();
+  });
+
+  paint();
+})();
+</script>
+
+</body>
+</html>
