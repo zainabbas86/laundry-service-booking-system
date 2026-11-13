@@ -1,3 +1,14 @@
+# Store text files with LF in the repo and check them out with LF.
+* text=auto eol=lf
+
 # Check out draw.io diagrams with CRLF line endings, as the diagrams.net
 # editor writes them, and stop whole-file diffs caused by line endings.
 *.drawio text eol=crlf
+
+# Binary files: never touch line endings.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.docx binary
+*.pdf binary
