@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bookings · LSBS Manager</title>
+</head>
+<body style="margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;background:#f3f4f6;color:#111827;line-height:1.5;">
+
+<header style="background:#2563eb;color:#ffffff;padding:16px 24px;">
+  <div style="max-width:1040px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+    <div style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;">
+      <span aria-hidden="true" style="width:30px;height:30px;border-radius:8px;background:rgba(255,255,255,0.22);display:grid;place-items:center;font-size:14px;">L</span>
+      <span>LSBS</span>
+    </div>
+    <nav aria-label="Main" style="display:flex;gap:20px;font-size:14px;">
+      <a href="#bookings" aria-current="page" style="color:#ffffff;text-decoration:none;padding:4px 0;border-bottom:2px solid #ffffff;font-weight:600;">Bookings</a>
+      <a href="#tickets" style="color:#dbeafe;text-decoration:none;padding:4px 0;border-bottom:2px solid transparent;">Tickets</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:8px;font-size:14px;background:rgba(255,255,255,0.16);padding:6px 12px 6px 6px;border-radius:999px;">
+      <span aria-hidden="true" style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.25);display:grid;place-items:center;font-size:11px;font-weight:700;">BB</span>
+      <span>Barliman Butterbur</span>
+    </div>
+  </div>
+</header>
+
+<main id="bookings" style="max-width:900px;margin:32px auto 64px;padding:0 20px;">
+  <h1 style="margin:0 0 8px;font-size:26px;line-height:1.3;">Awaiting pickup</h1>
+  <p style="margin:0 0 20px;color:#4b5563;font-size:14px;">Online bookings for Sydney CBD. Assigning a driver confirms the booking.</p>
+
+  <div id="flash" role="status" style="display:none;align-items:flex-start;gap:8px;padding:12px;border:1px solid #bbf7d0;border-radius:10px;background:#f0fdf4;color:#166534;font-size:13px;margin-bottom:16px;">
+    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="flash-text"></span>
+  </div>
+
+  <section style="background:#ffffff;border:1px solid #e5e7eb;border-radius:14px;padding:24px;box-shadow:0 1px 3px rgba(17,24,39,0.08);">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
+      <h2 style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:#6b7280;">Queue</h2>
+      <span id="count" style="font-size:12px;color:#6b7280;">3 bookings awaiting pickup</span>
+    </div>
+
+    <div id="rows" style="display:grid;gap:10px;">
+
+      <div class="row" data-ticket="3f2b8c1e" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 14px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+        <span style="font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:600;">3f2b8c1e</span>
+        <span style="flex:1 1 220px;min-width:0;">
+          <span style="display:block;font-weight:600;">Boromir</span>
+          <span style="display:block;font-size:12px;color:#6b7280;">Thu 12 Nov | 10:00-10:30 | The Citadel, Minas Tirith</span>
+        </span>
+        <span class="badge" style="padding:3px 10px;border-radius:999px;background:#f3f4f6;color:#374151;font-size:12px;font-weight:600;">Awaiting pickup</span>
+        <a href="desktop/lsbs-manager-booking.html" style="padding:8px 12px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#374151;font-size:14px;text-decoration:none;">Details</a>
+        <select class="driver" aria-label="Assign driver" style="padding:8px 10px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;font-size:14px;font-family:inherit;color:#111827;">
+          <option value="">Assign driver</option>
+          <option value="Eowyn">Eowyn</option>
+          <option value="Samwise Gamgee">Samwise Gamgee</option>
+        </select>
+        <button type="button" class="cancel" style="padding:8px 12px;border:1px solid #fecaca;border-radius:8px;background:#ffffff;color:#b91c1c;font-size:14px;font-family:inherit;cursor:pointer;">Cancel</button>
+      </div>
+
+      <div class="row" data-ticket="7c19de04" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 14px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+        <span style="font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:600;">7c19de04</span>
+        <span style="flex:1 1 220px;min-width:0;">
+          <span style="display:block;font-weight:600;">Frodo Baggins</span>
+          <span style="display:block;font-size:12px;color:#6b7280;">Thu 12 Nov | 10:30-11:00 | 1 Bag End St, Hobbiton</span>
+        </span>
+        <span class="badge" style="padding:3px 10px;border-radius:999px;background:#f3f4f6;color:#374151;font-size:12px;font-weight:600;">Awaiting pickup</span>
+        <a href="desktop/lsbs-manager-booking.html" style="padding:8px 12px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#374151;font-size:14px;text-decoration:none;">Details</a>
+        <select class="driver" aria-label="Assign driver" style="padding:8px 10px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;font-size:14px;font-family:inherit;color:#111827;">
+          <option value="">Assign driver</option>
+          <option value="Eowyn">Eowyn</option>
+          <option value="Samwise Gamgee">Samwise Gamgee</option>
+        </select>
+        <button type="button" class="cancel" style="padding:8px 12px;border:1px solid #fecaca;border-radius:8px;background:#ffffff;color:#b91c1c;font-size:14px;font-family:inherit;cursor:pointer;">Cancel</button>
+      </div>
+
+      <div class="row" data-ticket="b02a4f77" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 14px;border:1px solid #e5e7eb;border-radius:10px;font-size:14px;">
+        <span style="font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:600;">b02a4f77</span>
+        <span style="flex:1 1 220px;min-width:0;">
+          <span style="display:block;font-weight:600;">Sauron</span>
+          <span style="display:block;font-size:12px;color:#6b7280;">Thu 12 Nov | 11:00-11:30 | Black Gate, Mordor</span>
+        </span>
+        <span class="badge" style="padding:3px 10px;border-radius:999px;background:#f3f4f6;color:#374151;font-size:12px;font-weight:600;">Awaiting pickup</span>
+        <a href="desktop/lsbs-manager-booking.html" style="padding:8px 12px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#374151;font-size:14px;text-decoration:none;">Details</a>
+        <select class="driver" aria-label="Assign driver" style="padding:8px 10px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;font-size:14px;font-family:inherit;color:#111827;">
+          <option value="">Assign driver</option>
+          <option value="Eowyn">Eowyn</option>
+          <option value="Samwise Gamgee">Samwise Gamgee</option>
+        </select>
+        <button type="button" class="cancel" style="padding:8px 12px;border:1px solid #fecaca;border-radius:8px;background:#ffffff;color:#b91c1c;font-size:14px;font-family:inherit;cursor:pointer;">Cancel</button>
+      </div>
+
+    </div>
+
+    <div id="confirm" style="display:none;margin-top:16px;padding:14px;border:1px solid #fecaca;border-radius:10px;background:#fef2f2;">
+      <p style="margin:0;font-size:13px;color:#b91c1c;">Cancel booking <strong id="confirm-id">3f2b8c1e</strong>? The action is logged against your user.</p>
+      <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;">
+        <button type="button" id="confirm-yes" style="padding:8px 14px;border:1px solid #dc2626;border-radius:8px;background:#dc2626;color:#ffffff;font-size:14px;font-family:inherit;font-weight:600;cursor:pointer;">Cancel booking</button>
+        <button type="button" id="confirm-no" style="padding:8px 14px;border:1px solid #d1d5db;border-radius:8px;background:#ffffff;color:#374151;font-size:14px;font-family:inherit;cursor:pointer;">Keep</button>
+      </div>
+    </div>
+
+    <div id="empty" style="display:none;flex-direction:column;align-items:center;gap:6px;padding:28px 20px;border:1px dashed #d1d5db;border-radius:10px;text-align:center;">
+      <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line><line x1="8" y1="15" x2="16" y2="15"></line></svg>
+      <span style="font-size:14px;font-weight:600;">No bookings awaiting pickup</span>
+      <span style="font-size:12px;color:#6b7280;">New online bookings for Sydney CBD appear here.</span>
+    </div>
+
+  </section>
+</main>
+
+<script>
+(function () {
+  var badges = {
+    'Awaiting pickup': ['#f3f4f6', '#374151'],
+    'Pickup assigned': ['#eff6ff', '#1d4ed8'],
+    'Collected': ['#fffbeb', '#92400e'],
+    'Processing': ['#f5f3ff', '#6d28d9'],
+    'Cancelled': ['#fef2f2', '#b91c1c']
+  };
+  var rows = document.querySelectorAll('.row');
+  var count = document.getElementById('count');
+  var empty = document.getElementById('empty');
+  var flash = document.getElementById('flash');
+  var flashText = document.getElementById('flash-text');
+  var confirmBox = document.getElementById('confirm');
+  var confirmId = document.getElementById('confirm-id');
+  var confirmYes = document.getElementById('confirm-yes');
+  var confirmNo = document.getElementById('confirm-no');
+  var pending = null;
+
+  function setBadge(el, status) {
+    el.textContent = status;
+    el.style.background = badges[status][0];
+    el.style.color = badges[status][1];
+  }
+
+  function badgeOf(row) { return row.querySelector('.badge'); }
+  function isOpen(row) { return badgeOf(row).textContent === 'Awaiting pickup'; }
+
+  function refresh() {
+    var open = 0;
+    rows.forEach(function (row) { if (isOpen(row)) open++; });
+    count.textContent = open + (open === 1 ? ' booking awaiting pickup' : ' bookings awaiting pickup');
+    var allHandled = open === 0;
+    document.getElementById('rows').style.display = allHandled ? 'none' : 'grid';
+    empty.style.display = allHandled ? 'flex' : 'none';
+    if (allHandled) confirmBox.style.display = 'none';
+  }
+
+  function say(message) {
+    flashText.textContent = message;
+    flash.style.display = 'flex';
+  }
+
+  rows.forEach(function (row) {
+    var select = row.querySelector('.driver');
+    var cancel = row.querySelector('.cancel');
+
+    select.addEventListener('change', function () {
+      if (!select.value) return;
+      setBadge(badgeOf(row), 'Pickup assigned');
+      select.disabled = true;
+      select.style.opacity = '0.6';
+      say(select.value + ' assigned to ' + row.getAttribute('data-ticket') + '. Booking confirmed.');
+      refresh();
+    });
+
+    cancel.addEventListener('click', function () {
+      pending = row;
+      confirmId.textContent = row.getAttribute('data-ticket');
+      confirmBox.style.display = 'block';
+      confirmBox.scrollIntoView({ block: 'nearest' });
+    });
+  });
+
+  confirmYes.addEventListener('click', function () {
+    if (!pending) return;
+    setBadge(badgeOf(pending), 'Cancelled');
+    pending.querySelector('.driver').disabled = true;
+    pending.querySelector('.driver').style.opacity = '0.5';
+    pending.querySelector('.cancel').disabled = true;
+    pending.querySelector('.cancel').style.opacity = '0.5';
+    pending.querySelector('.cancel').style.cursor = 'not-allowed';
+    confirmBox.style.display = 'none';
+    pending = null;
+    refresh();
+  });
+
+  confirmNo.addEventListener('click', function () {
+    confirmBox.style.display = 'none';
+    pending = null;
+  });
+
+  refresh();
+})();
+</script>
+
+</body>
+</html>
