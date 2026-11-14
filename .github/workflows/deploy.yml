@@ -96,6 +96,15 @@ jobs:
           sudo mkdir -p /var/www/lsbs
           sudo cp -r frontend/build/. /var/www/lsbs/
 
+      - name: Create self-signed certificate
+        run: |
+          if [ ! -f /etc/nginx/ssl/lsbs.crt ]; then
+            sudo mkdir -p /etc/nginx/ssl
+            sudo openssl req -x509 -nodes -newkey rsa:2048 -days 365 \
+              -keyout /etc/nginx/ssl/lsbs.key -out /etc/nginx/ssl/lsbs.crt -subj "/CN=lsbs"
+            sudo chmod 600 /etc/nginx/ssl/lsbs.key
+          fi
+
       - name: Configure Nginx
         run: |
           sudo cp deploy/nginx/lsbs.conf /etc/nginx/sites-available/lsbs
@@ -119,7 +128,7 @@ jobs:
       - name: Check the app responds
         run: |
           for attempt in $(seq 1 15); do
-            code=$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1/api/stores || true)
+            code=$(curl -sk -o /dev/null -w '%{http_code}' https://127.0.0.1/api/stores || true)
             if [ "$code" = "401" ]; then
               echo "Backend is answering through Nginx"
               exit 0
