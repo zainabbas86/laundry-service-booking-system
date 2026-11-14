@@ -1,0 +1,131 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Environment to deploy to
+        type: environment
+        required: true
+        default: lsbs-prod
+
+concurrency:
+  group: deploy-${{ inputs.environment }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    name: Backend tests
+    runs-on: ubuntu-latest
+    services:
+      mongo:
+        image: mongo:7.0
+        ports:
+          - 27017:27017
+    env:
+      MONGO_URI: mongodb://localhost:27017/lsbs_test
+      JWT_SECRET: ci-test-secret
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm ci
+
+      - name: Run backend tests
+        working-directory: backend
+        run: npm test
+
+  deploy:
+    name: Deploy to ${{ inputs.environment }}
+    needs: test
+    runs-on: [self-hosted, lsbs-prod]
+    environment: ${{ inputs.environment }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Write backend .env
+        env:
+          MONGO_URI: ${{ secrets.MONGO_URI }}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          PORT: ${{ vars.PORT }}
+          ADMIN_NAME: ${{ vars.ADMIN_NAME }}
+        run: |
+          umask 077
+          printf '%s=%s\n' \
+            MONGO_URI "$MONGO_URI" \
+            JWT_SECRET "$JWT_SECRET" \
+            PORT "$PORT" \
+            ADMIN_NAME "$ADMIN_NAME" \
+            ADMIN_EMAIL "$ADMIN_EMAIL" \
+            ADMIN_PASSWORD "$ADMIN_PASSWORD" \
+            > backend/.env
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm ci --omit=dev
+
+      - name: Seed admin and store
+        working-directory: backend
+        run: npm run seed
+
+      - name: Build frontend
+        working-directory: frontend
+        env:
+          REACT_APP_API_URL: ""
+          GENERATE_SOURCEMAP: "false"
+          CI: "false"
+        run: |
+          npm ci
+          npm run build
+
+      - name: Publish frontend
+        run: |
+          sudo rm -rf /var/www/lsbs
+          sudo mkdir -p /var/www/lsbs
+          sudo cp -r frontend/build/. /var/www/lsbs/
+
+      - name: Configure Nginx
+        run: |
+          sudo cp deploy/nginx/lsbs.conf /etc/nginx/sites-available/lsbs
+          sudo ln -sf /etc/nginx/sites-available/lsbs /etc/nginx/sites-enabled/lsbs
+          sudo rm -f /etc/nginx/sites-enabled/default
+          sudo nginx -t
+          sudo systemctl reload nginx
+
+      - name: Start PM2 on boot
+        run: sudo env PATH="$PATH" "$(command -v pm2)" startup systemd -u "$USER" --hp "$HOME"
+
+      - name: Start backend with PM2
+        working-directory: backend
+        env:
+          RUNNER_TRACKING_ID: ""
+        run: |
+          pm2 delete lsbs-backend > /dev/null 2>&1 || true
+          pm2 start server.js --name lsbs-backend
+          pm2 save
+
+      - name: Check the app responds
+        run: |
+          for attempt in $(seq 1 15); do
+            code=$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1/api/stores || true)
+            if [ "$code" = "401" ]; then
+              echo "Backend is answering through Nginx"
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Backend did not answer through Nginx (last status: $code)"
+          pm2 logs lsbs-backend --lines 30 --nostream
+          exit 1
