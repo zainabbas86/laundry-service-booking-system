@@ -3,7 +3,7 @@ const { ROLES, ROLE_LIST } = require('../constants/roles');
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// Roles each creator may hand out (R005). Managers add customers and drivers only.
+// Roles each creator may assign. Managers add customers and drivers only.
 const CAN_CREATE = {
     [ROLES.ADMIN]: ROLE_LIST,
     [ROLES.MANAGER]: [ROLES.DRIVER, ROLES.CUSTOMER],

@@ -1,18 +1,26 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axiosInstance from '../axiosConfig';
+import { useAuth } from '../context/AuthContext';
 import { UserIcon, MailIcon, LockIcon, ArrowRightIcon } from '../components/Icons';
 
 const Register = () => {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
+  const { user, login } = useAuth();
   const navigate = useNavigate();
+
+  // Already signed in: nothing to register.
+  if (user) {
+    return <Navigate to="/dashboard" replace />;
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axiosInstance.post('/api/auth/register', formData);
-      alert('Registration successful. Please log in.');
-      navigate('/login');
+      // Register returns a token, so sign the user in straight away.
+      const response = await axiosInstance.post('/api/auth/register', formData);
+      login(response.data);
+      navigate('/dashboard');
     } catch (error) {
       alert('Registration failed. Please try again.');
     }
