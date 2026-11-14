@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const AdminDashboard = () => (
   <main className="page">
     <h1 className="page-title">Admin</h1>
@@ -10,7 +12,8 @@ const AdminDashboard = () => (
 
     <section className="card">
       <h2 className="text-lg font-semibold mb-1">Users</h2>
-      <p className="text-sm text-gray-600">Admin users placeholder. User management and role changes will appear here.</p>
+      <p className="text-sm text-gray-600 mb-4">Add, edit and remove accounts, change roles and reset passwords.</p>
+      <Link to="/users" className="btn-primary inline-block">Manage users</Link>
     </section>
   </main>
 );
