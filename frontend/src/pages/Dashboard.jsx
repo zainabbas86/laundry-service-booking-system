@@ -22,12 +22,12 @@ const Dashboard = () => {
       return <AdminDashboard />;
     default:
       return (
-        <div className="max-w-3xl mx-auto mt-10 p-6 bg-white rounded shadow-md">
-          <h1 className="text-2xl font-bold">Welcome, {user.name}</h1>
-          <p className="text-sm text-gray-600 mt-2">
+        <main className="page">
+          <h1 className="page-title">Welcome, {user.name}</h1>
+          <div className="card text-sm text-gray-600">
             No dashboard is set up for this role{user.role ? ` (${user.role})` : ''}.
-          </p>
-        </div>
+          </div>
+        </main>
       );
   }
 };

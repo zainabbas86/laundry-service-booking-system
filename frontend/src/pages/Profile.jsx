@@ -48,46 +48,61 @@ const Profile = () => {
   };
 
   if (loading) {
-    return <div className="text-center mt-20">Loading...</div>;
+    return <div className="page text-center text-gray-600">Loading...</div>;
   }
 
   return (
-    <div className="max-w-md mx-auto mt-20">
-      <form onSubmit={handleSubmit} className="bg-white p-6 shadow-md rounded">
-        <h1 className="text-2xl font-bold mb-4 text-center">Your Profile</h1>
-        <input
-          type="text"
-          placeholder="Name"
-          value={formData.name}
-          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          className="w-full mb-4 p-2 border rounded"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          className="w-full mb-4 p-2 border rounded"
-        />
-        <input
-          type="text"
-          placeholder="University"
-          value={formData.university}
-          onChange={(e) => setFormData({ ...formData, university: e.target.value })}
-          className="w-full mb-4 p-2 border rounded"
-        />
-        <input
-          type="text"
-          placeholder="Address"
-          value={formData.address}
-          onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-          className="w-full mb-4 p-2 border rounded"
-        />
-        <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded">
-          {loading ? 'Updating...' : 'Update Profile'}
+    <main className="page max-w-lg">
+      <h1 className="page-title">Your profile</h1>
+      <p className="page-lead">Keep your details up to date so drivers can find you.</p>
+
+      <form onSubmit={handleSubmit} className="card space-y-4">
+        <div>
+          <label htmlFor="name" className="label">Name</label>
+          <input
+            id="name"
+            type="text"
+            value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            className="input"
+          />
+        </div>
+        <div>
+          <label htmlFor="email" className="label">Email</label>
+          <input
+            id="email"
+            type="email"
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+            className="input"
+          />
+        </div>
+        <div>
+          <label htmlFor="university" className="label">University</label>
+          <input
+            id="university"
+            type="text"
+            value={formData.university}
+            onChange={(e) => setFormData({ ...formData, university: e.target.value })}
+            className="input"
+          />
+        </div>
+        <div>
+          <label htmlFor="address" className="label">Address</label>
+          <input
+            id="address"
+            type="text"
+            placeholder="Pickup address"
+            value={formData.address}
+            onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+            className="input"
+          />
+        </div>
+        <button type="submit" className="btn-primary w-full">
+          {loading ? 'Updating...' : 'Update profile'}
         </button>
       </form>
-    </div>
+    </main>
   );
 };
 

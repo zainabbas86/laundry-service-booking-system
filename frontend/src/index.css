@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Shared styles from the hi-fi components sheet */
+@layer base {
+  body {
+    @apply bg-gray-100 text-gray-900 leading-normal antialiased;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .page {
+    @apply max-w-3xl mx-auto mt-8 mb-16 px-5;
+  }
+
+  .page-title {
+    @apply text-[26px] font-bold leading-tight mb-2;
+  }
+
+  .page-lead {
+    @apply text-sm text-gray-600 mb-5;
+  }
+
+  .card {
+    @apply bg-white border border-gray-200 rounded-2xl p-6 shadow-sm;
+  }
+
+  .label {
+    @apply block text-[13px] font-semibold text-gray-700 mb-1.5;
+  }
+
+  .input {
+    @apply w-full px-3 py-2.5 border border-gray-300 rounded-lg bg-white text-sm text-gray-900
+      placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-200;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2.5 rounded-lg bg-blue-600 border border-blue-600 text-white text-sm font-semibold
+      hover:bg-blue-700 disabled:bg-gray-400 disabled:border-gray-400 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2.5 rounded-lg bg-white border border-gray-300 text-gray-700 text-sm hover:bg-gray-50;
+  }
+
+  /* Auth screens (Log In, Register Account) from the prototype */
+  .auth-field {
+    @apply flex items-center gap-3 bg-white rounded-xl px-4 py-3.5 shadow-sm border border-transparent
+      focus-within:border-blue-600 focus-within:ring-4 focus-within:ring-blue-200;
+  }
+
+  .auth-field input {
+    @apply flex-1 bg-transparent text-[15px] text-gray-900 placeholder-gray-500 focus:outline-none;
+  }
+
+  .auth-link {
+    @apply text-fuchsia-700 font-medium hover:underline;
+  }
+}

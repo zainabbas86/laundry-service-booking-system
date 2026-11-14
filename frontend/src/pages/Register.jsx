@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axiosInstance from '../axiosConfig';
+import { UserIcon, MailIcon, LockIcon, ArrowRightIcon } from '../components/Icons';
 
 const Register = () => {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
@@ -18,34 +19,61 @@ const Register = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-20">
-      <form onSubmit={handleSubmit} className="bg-white p-6 shadow-md rounded">
-        <h1 className="text-2xl font-bold mb-4 text-center">Register</h1>
-        <input
-          type="text"
-          placeholder="Name"
-          value={formData.name}
-          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          className="w-full mb-4 p-2 border rounded"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          className="w-full mb-4 p-2 border rounded"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={formData.password}
-          onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-          className="w-full mb-4 p-2 border rounded"
-        />
-        <button type="submit" className="w-full bg-green-600 text-white p-2 rounded">
-          Register
+    <div className="max-w-sm mx-auto px-5 pt-10 pb-16">
+      <img src="/logo192.png" alt="LSBS logo" className="w-20 h-20 mb-6" />
+
+      <h1 className="text-3xl font-bold">Register Account</h1>
+      <p className="text-gray-600 mt-1 mb-6">Join our laundry service to book a wash now</p>
+
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <label className="auth-field">
+          <UserIcon className="text-gray-400 shrink-0" />
+          <input
+            type="text"
+            placeholder="Full name"
+            aria-label="Full name"
+            autoComplete="name"
+            required
+            value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          />
+        </label>
+        <label className="auth-field">
+          <MailIcon className="text-gray-400 shrink-0" />
+          <input
+            type="email"
+            placeholder="Your email"
+            aria-label="Email"
+            autoComplete="email"
+            required
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          />
+        </label>
+        <label className="auth-field">
+          <LockIcon className="text-gray-400 shrink-0" />
+          <input
+            type="password"
+            placeholder="Password"
+            aria-label="Password"
+            autoComplete="new-password"
+            required
+            value={formData.password}
+            onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+          />
+        </label>
+
+        <button type="submit" className="btn-primary w-full py-3.5 rounded-xl text-base mt-4">
+          Sign Up
         </button>
       </form>
+
+      <p className="text-center text-gray-600 mt-10">
+        Already have an account?{' '}
+        <Link to="/login" className="auth-link inline-flex items-center gap-1 text-sm">
+          Log In <ArrowRightIcon />
+        </Link>
+      </p>
     </div>
   );
 };
