@@ -5,6 +5,8 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
 import Dashboard from './pages/Dashboard';
+import Users from './pages/Users';
+import { ROLES } from './constants/roles';
 
 function App() {
   return (
@@ -30,6 +32,15 @@ function App() {
           element={
             <ProtectedRoute>
               <Profile />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/users"
+          element={
+            <ProtectedRoute allow={[ROLES.ADMIN]}>
+              <Users />
             </ProtectedRoute>
           }
         />

@@ -20,7 +20,10 @@ const MENU = {
   [Roles.CUSTOMER]: [{ to: '/dashboard', label: 'My laundry' }],
   [Roles.MANAGER]: [{ to: '/dashboard', label: 'Bookings' }],
   [Roles.DRIVER]: [{ to: '/dashboard', label: 'My jobs' }],
-  [Roles.ADMIN]: [{ to: '/dashboard', label: 'Dashboard' }],
+  [Roles.ADMIN]: [
+    { to: '/dashboard', label: 'Dashboard' },
+    { to: '/users', label: 'Users' },
+  ],
 };
 
 const Navbar = () => {
