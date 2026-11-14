@@ -28,7 +28,7 @@ const ticketSchema = new mongoose.Schema(
         returnMethod: { type: String, required: true, enum: RETURN_METHOD_LIST },
         deliverySlot: { type: Date, default: null },
         status: { type: String, enum: STATUS_LIST, default: STATUSES.AWAITING_PICKUP },
-        subStatus: { type: String, enum: SUB_STATUS_LIST, default: null },
+        subStatus: { type: String, enum: [...SUB_STATUS_LIST, null], default: null },
         driver: { type: mongoose.Schema.Types.ObjectId, ref: 'User', default: null },
         occupiesSlot: { type: Boolean, default: true },
         log: { type: [logEntrySchema], default: [] },
