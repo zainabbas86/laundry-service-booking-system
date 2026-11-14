@@ -1,19 +1,24 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import axiosInstance from '../axiosConfig';
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
-  const { login } = useAuth();
+  const { user, login } = useAuth();
   const navigate = useNavigate();
+
+  // Already signed in: no reason to show the login form.
+  if (user) {
+    return <Navigate to="/dashboard" replace />;
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axiosInstance.post('/api/auth/login', formData);
       login(response.data);
-      navigate('/tasks');
+      navigate('/dashboard');
     } catch (error) {
       alert('Login failed. Please try again.');
     }
