@@ -1,5 +1,6 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import Roles, { roleLabel } from '../constants/roles';
 
 const initials = (name = '') =>
   name
@@ -14,9 +15,19 @@ const navClass = ({ isActive }) =>
     isActive ? 'text-white border-white font-semibold' : 'text-blue-100 border-transparent hover:text-white'
   }`;
 
+// One menu per role
+const MENU = {
+  [Roles.CUSTOMER]: [{ to: '/dashboard', label: 'My laundry' }],
+  [Roles.MANAGER]: [{ to: '/dashboard', label: 'Bookings' }],
+  [Roles.DRIVER]: [{ to: '/dashboard', label: 'My jobs' }],
+  [Roles.ADMIN]: [{ to: '/dashboard', label: 'Dashboard' }],
+};
+
 const Navbar = () => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+
+  const links = (user && MENU[user.role]) || [];
 
   const handleLogout = () => {
     logout();
@@ -36,7 +47,11 @@ const Navbar = () => {
         {user ? (
           <>
             <nav aria-label="Main" className="flex gap-5 text-sm">
-              <NavLink to="/dashboard" className={navClass}>Dashboard</NavLink>
+              {links.map((link) => (
+                <NavLink key={link.to} to={link.to} className={navClass}>
+                  {link.label}
+                </NavLink>
+              ))}
               <NavLink to="/profile" className={navClass}>Profile</NavLink>
             </nav>
 
@@ -45,7 +60,10 @@ const Navbar = () => {
                 <span className="w-[26px] h-[26px] rounded-full bg-white/25 grid place-items-center text-[11px] font-bold">
                   {initials(user.name)}
                 </span>
-                <span>{user.name}</span>
+                <span>
+                  {user.name}
+                  <span className="text-blue-200"> | {roleLabel(user.role)}</span>
+                </span>
               </span>
               <button
                 type="button"

@@ -5,8 +5,6 @@
 //   success:  201 { id, name, email, role }  (never the password)
 //   duplicate: 409  (do not create a second record for the same email)
 //   invalid:  400  (missing fields, unknown role)
-//
-// These tests are expected to FAIL until the route/controller exist.
 
 const chai = require('chai');
 const chaiHttp = require('chai-http');
