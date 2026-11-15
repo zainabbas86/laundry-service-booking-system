@@ -21,6 +21,11 @@ const toDate = (value) => {
     return Number.isNaN(date.getTime()) ? null : date;
 };
 
+const NEXT_STEP = {
+    [SUB_STATUSES.PICKUP_ASSIGNED]: SUB_STATUSES.COLLECTED,
+    [SUB_STATUSES.COLLECTED]: SUB_STATUSES.RECEIVED_AT_LAUNDRY,
+};
+
 const today = () => new Date().toLocaleDateString('en-CA');
 
 const parseDay = (value) => {
@@ -325,4 +330,50 @@ const assignDriver = async (req, res) => {
     }
 };
 
-module.exports = { getSlots, createTicket, getMyTickets, cancelTicket, getTickets, assignDriver };
+const getMyJobs = async (req, res) => {
+    try {
+        const tickets = await Ticket.find({ driver: req.user.id, status: STATUSES.AWAITING_PICKUP })
+            .sort({ pickupSlot: 1 })
+            .populate([
+                { path: 'store', select: 'name address' },
+                { path: 'customer', select: 'name' },
+            ]);
+
+        return res.json(tickets.map(toTicket));
+    } catch (error) {
+        return res.status(500).json({ message: error.message });
+    }
+};
+
+const advanceJob = async (req, res) => {
+    if (!mongoose.isValidObjectId(req.params.id)) {
+        return res.status(404).json({ message: 'Job not found' });
+    }
+
+    try {
+        const ticket = await Ticket.findById(req.params.id);
+        if (!ticket || ticket.driver?.toString() !== req.user.id) {
+            return res.status(404).json({ message: 'Job not found' });
+        }
+
+        const next = NEXT_STEP[ticket.subStatus];
+        if (ticket.status !== STATUSES.AWAITING_PICKUP || !next) {
+            return res.status(400).json({ message: 'This job has no next step' });
+        }
+
+        ticket.subStatus = next;
+        if (next === SUB_STATUSES.RECEIVED_AT_LAUNDRY) {
+            ticket.status = STATUSES.PROCESSING;
+        }
+        ticket.log.push({ action: next, by: req.user.id, byName: req.user.name });
+
+        await ticket.save();
+        await populateTicket(ticket);
+
+        return res.json(toTicket(ticket));
+    } catch (error) {
+        return res.status(500).json({ message: error.message });
+    }
+};
+
+module.exports = { getSlots, createTicket, getMyTickets, cancelTicket, getTickets, assignDriver, , getMyJobs, advanceJob  };
