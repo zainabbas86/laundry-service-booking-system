@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
 import Dashboard from './pages/Dashboard';
+import BookPickup from './pages/BookPickup';
 import Users from './pages/Users';
 import { ROLES } from './constants/roles';
 
@@ -23,6 +24,15 @@ function App() {
           element={
             <ProtectedRoute>
               <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/book"
+          element={
+            <ProtectedRoute allow={[ROLES.CUSTOMER]}>
+              <BookPickup />
             </ProtectedRoute>
           }
         />

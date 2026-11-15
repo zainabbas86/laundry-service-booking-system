@@ -17,7 +17,10 @@ const navClass = ({ isActive }) =>
 
 // One menu per role
 const MENU = {
-  [Roles.CUSTOMER]: [{ to: '/dashboard', label: 'My laundry' }],
+  [Roles.CUSTOMER]: [
+    { to: '/dashboard', label: 'My laundry' },
+    { to: '/book', label: 'Book a pickup' },
+  ],
   [Roles.MANAGER]: [{ to: '/dashboard', label: 'Bookings' }],
   [Roles.DRIVER]: [{ to: '/dashboard', label: 'My jobs' }],
   [Roles.ADMIN]: [
