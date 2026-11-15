@@ -5,7 +5,9 @@ const {
   getMyTickets, 
   cancelTicket, 
   getTickets, 
-  assignDriver 
+  assignDriver,
+  getMyJobs,
+  advanceJob,
 } = require('../controllers/ticketController');
 const { protect, authorize } = require('../middleware/authMiddleware');
 const { ROLES } = require('../constants/roles');
