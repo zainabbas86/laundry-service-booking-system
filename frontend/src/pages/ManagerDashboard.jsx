@@ -3,6 +3,7 @@ import axiosInstance from '../axiosConfig';
 import {
   RETURN_METHODS,
   STATUSES,
+  SUB_STATUSES,
   formatSlot,
   returnMethodLabel,
   serviceLabel,
@@ -96,6 +97,9 @@ const ManagerDashboard = () => {
           <ul className="divide-y divide-gray-100">
             {tickets.map((ticket) => {
               const selected = picked[ticket.id] ?? ticket.driver?.id ?? '';
+              const canAssign =
+                ticket.status === STATUSES.AWAITING_PICKUP && ticket.subStatus !== SUB_STATUSES.COLLECTED;
+              const canCancel = ![STATUSES.COMPLETED, STATUSES.CANCELLED].includes(ticket.status);
               return (
                 <li key={ticket.id} className="py-4 first:pt-0 last:pb-0">
                   <div className="flex flex-wrap items-start justify-between gap-3">
@@ -119,35 +123,41 @@ const ManagerDashboard = () => {
                       </p>
                     </div>
 
-                    {ticket.status === STATUSES.AWAITING_PICKUP && (
+                    {(canAssign || canCancel) && (
                       <div className="flex flex-wrap items-center gap-2 text-sm">
-                        <label htmlFor={`driver-${ticket.id}`} className="sr-only">Driver</label>
-                        <select
-                          id={`driver-${ticket.id}`}
-                          className="input w-auto"
-                          value={selected}
-                          onChange={(e) => setPicked({ ...picked, [ticket.id]: e.target.value })}
-                        >
-                          <option value="">Choose a driver</option>
-                          {drivers.map((driver) => (
-                            <option key={driver.id} value={driver.id}>{driver.name}</option>
-                          ))}
-                        </select>
-                        <button
-                          type="button"
-                          className="btn-primary"
-                          disabled={!selected || selected === ticket.driver?.id}
-                          onClick={() => handleAssign(ticket, selected)}
-                        >
-                          {ticket.driver ? 'Reassign' : 'Assign'}
-                        </button>
-                        <button
-                          type="button"
-                          className="btn-secondary text-red-600"
-                          onClick={() => handleCancel(ticket)}
-                        >
-                          Cancel
-                        </button>
+                        {canAssign && (
+                          <>
+                            <label htmlFor={`driver-${ticket.id}`} className="sr-only">Driver</label>
+                            <select
+                              id={`driver-${ticket.id}`}
+                              className="input w-auto"
+                              value={selected}
+                              onChange={(e) => setPicked({ ...picked, [ticket.id]: e.target.value })}
+                            >
+                              <option value="">Choose a driver</option>
+                              {drivers.map((driver) => (
+                                <option key={driver.id} value={driver.id}>{driver.name}</option>
+                              ))}
+                            </select>
+                            <button
+                              type="button"
+                              className="btn-primary"
+                              disabled={!selected || selected === ticket.driver?.id}
+                              onClick={() => handleAssign(ticket, selected)}
+                            >
+                              {ticket.driver ? 'Reassign' : 'Assign'}
+                            </button>
+                          </>
+                        )}
+                        {canCancel && (
+                          <button
+                            type="button"
+                            className="btn-secondary text-red-600"
+                            onClick={() => handleCancel(ticket)}
+                          >
+                            Cancel
+                          </button>
+                        )}
                       </div>
                     )}
                   </div>
