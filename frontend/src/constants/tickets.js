@@ -40,6 +40,14 @@ export const STATUSES = Object.freeze({
 
 export const STATUS_LIST = Object.values(STATUSES);
 
+export const SUB_STATUSES = Object.freeze({
+  PICKUP_ASSIGNED: 'Pickup assigned',
+  COLLECTED: 'Collected',
+  RECEIVED_AT_LAUNDRY: 'Received at laundry',
+});
+
+export const SUB_STATUS_LIST = Object.values(SUB_STATUSES);
+
 export const shortTicketNo = (no) => no.slice(0, 8);
 
 export const formatSlot = (iso) =>

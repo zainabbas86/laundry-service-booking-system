@@ -4,6 +4,7 @@ import axiosInstance from '../axiosConfig';
 import {
   RETURN_METHODS,
   STATUSES,
+  SUB_STATUSES,
   formatSlot,
   returnMethodLabel,
   serviceLabel,
@@ -12,7 +13,7 @@ import {
 
 const apiMessage = (error, fallback) => error.response?.data?.message || fallback;
 
-const COLLECTED_SUB_STATUSES = ['Collected', 'Received at laundry'];
+const COLLECTED_SUB_STATUSES = [SUB_STATUSES.COLLECTED, SUB_STATUSES.RECEIVED_AT_LAUNDRY];
 
 const BADGE = {
   [STATUSES.AWAITING_PICKUP]: 'bg-amber-100 text-amber-800',
