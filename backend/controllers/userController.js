@@ -130,4 +130,14 @@ const deleteUser = async (req, res) => {
     }
 };
 
-module.exports = { createUser, getUsers, updateUser, deleteUser };
+const getDrivers = async (req, res) => {
+    try {
+        const drivers = await User.find({ role: ROLES.DRIVER }).sort({ name: 1 });
+        return res.json(drivers.map((driver) => ({ id: driver.id, name: driver.name })));
+    } catch (error) {
+        return res.status(500).json({ message: error.message });
+    }
+};
+
+
+module.exports = { createUser, getUsers, updateUser, deleteUser, getDrivers };

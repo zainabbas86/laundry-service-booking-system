@@ -2,12 +2,14 @@ const mongoose = require('mongoose');
 const Ticket = require('../models/Ticket');
 const Store = require('../models/Store');
 const { ROLES } = require('../constants/roles');
+const User = require('../models/User');
 const {
     SERVICE_LIST,
     RETURN_METHODS,
     RETURN_METHOD_LIST,
     STATUSES,
     SUB_STATUSES,
+    STATUS_LIST,
     SLOT,
 } = require('../constants/tickets');
 
@@ -267,4 +269,60 @@ const cancelTicket = async (req, res) => {
     }
 };
 
-module.exports = { getSlots, createTicket, getMyTickets, cancelTicket };
+const getTickets = async (req, res) => {
+    const filter = STATUS_LIST.includes(req.query.status) ? { status: req.query.status } : {};
+
+    try {
+        const tickets = await Ticket.find(filter)
+            .sort({ pickupSlot: 1 })
+            .populate([
+                { path: 'store', select: 'name address' },
+                { path: 'customer', select: 'name email' },
+                { path: 'driver', select: 'name' },
+            ]);
+
+        return res.json(tickets.map(toTicket));
+    } catch (error) {
+        return res.status(500).json({ message: error.message });
+    }
+};
+
+const assignDriver = async (req, res) => {
+    if (!mongoose.isValidObjectId(req.params.id)) {
+        return res.status(404).json({ message: 'Ticket not found' });
+    }
+    if (!mongoose.isValidObjectId(req.body.driver)) {
+        return res.status(400).json({ message: 'Choose a driver' });
+    }
+
+    try {
+        const ticket = await Ticket.findById(req.params.id);
+        if (!ticket) {
+            return res.status(404).json({ message: 'Ticket not found' });
+        }
+        const collected = [SUB_STATUSES.COLLECTED, SUB_STATUSES.RECEIVED_AT_LAUNDRY].includes(
+            ticket.subStatus
+        );
+        if (ticket.status !== STATUSES.AWAITING_PICKUP || collected) {
+            return res.status(400).json({ message: 'Only a ticket awaiting pickup can be assigned' });
+        }
+
+        const driver = await User.findOne({ _id: req.body.driver, role: ROLES.DRIVER });
+        if (!driver) {
+            return res.status(400).json({ message: 'Unknown driver' });
+        }
+
+        ticket.driver = driver._id;
+        ticket.subStatus = SUB_STATUSES.PICKUP_ASSIGNED;
+        ticket.log.push({ action: `Driver assigned: ${driver.name}`, by: req.user.id, byName: req.user.name });
+
+        await ticket.save();
+        await populateTicket(ticket);
+
+        return res.json(toTicket(ticket));
+    } catch (error) {
+        return res.status(500).json({ message: error.message });
+    }
+};
+
+module.exports = { getSlots, createTicket, getMyTickets, cancelTicket, getTickets, assignDriver };
