@@ -376,4 +376,4 @@ const advanceJob = async (req, res) => {
     }
 };
 
-module.exports = { getSlots, createTicket, getMyTickets, cancelTicket, getTickets, assignDriver, , getMyJobs, advanceJob  };
+module.exports = { getSlots, createTicket, getMyTickets, cancelTicket, getTickets, assignDriver, getMyJobs, advanceJob  };
