@@ -17,7 +17,7 @@ router.get('/mine', protect, authorize(ROLES.CUSTOMER), getMyTickets);
 router.post('/', protect, authorize(ROLES.CUSTOMER), createTicket);
 router.patch('/:id/cancel', protect, authorize(ROLES.CUSTOMER, ROLES.MANAGER, ROLES.ADMIN), cancelTicket);
 router.get('/', protect, authorize(ROLES.MANAGER, ROLES.ADMIN), getTickets);
-router.patch('/:id/assign', protect, authorize(ROLES.MANAGER), assignDriver);
+router.patch('/:id/assign', protect, authorize(ROLES.MANAGER, ROLES.ADMIN), assignDriver);
 
 
 module.exports = router;
