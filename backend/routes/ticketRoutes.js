@@ -18,6 +18,8 @@ router.post('/', protect, authorize(ROLES.CUSTOMER), createTicket);
 router.patch('/:id/cancel', protect, authorize(ROLES.CUSTOMER, ROLES.MANAGER, ROLES.ADMIN), cancelTicket);
 router.get('/', protect, authorize(ROLES.MANAGER, ROLES.ADMIN), getTickets);
 router.patch('/:id/assign', protect, authorize(ROLES.MANAGER, ROLES.ADMIN), assignDriver);
+router.get('/jobs', protect, authorize(ROLES.DRIVER), getMyJobs);
+router.patch('/:id/progress', protect, authorize(ROLES.DRIVER), advanceJob);
 
 
 module.exports = router;
