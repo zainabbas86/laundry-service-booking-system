@@ -1,7 +1,6 @@
 import { useAuth } from '../context/AuthContext';
 import CustomerDashboard from './CustomerDashboard';
 import ManagerDashboard from './ManagerDashboard';
-import AdminDashboard from './AdminDashboard';
 import DriverDashboard from './DriverDashboard';
 import Roles from '../constants/roles';
 
@@ -19,7 +18,7 @@ const Dashboard = () => {
     case Roles.DRIVER:
       return <DriverDashboard />;
     case Roles.ADMIN:
-      return <AdminDashboard />;
+      return <ManagerDashboard />;
     default:
       return (
         <main className="page">

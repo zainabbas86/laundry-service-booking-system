@@ -24,7 +24,7 @@ const MENU = {
   [Roles.MANAGER]: [{ to: '/dashboard', label: 'Bookings' }],
   [Roles.DRIVER]: [{ to: '/dashboard', label: 'My jobs' }],
   [Roles.ADMIN]: [
-    { to: '/dashboard', label: 'Dashboard' },
+    { to: '/dashboard', label: 'Bookings' },
     { to: '/users', label: 'Users' },
   ],
 };
